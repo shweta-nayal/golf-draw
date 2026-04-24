@@ -13,7 +13,7 @@ const features = [
 export const PricingPreview = () => {
   const nav = useNavigate();
   return (
-    <section className="bg-secondary/40 py-24 md:py-32">
+    <section className="bg-secondary/40 pt-12 md:pt-16 pb-24 md:pb-32">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <div className="text-xs uppercase tracking-[0.22em] text-gold font-medium">Plans</div>
