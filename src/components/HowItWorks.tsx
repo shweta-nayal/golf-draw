@@ -8,7 +8,7 @@ const steps = [
 ];
 
 export const HowItWorks = () => (
-  <section className="bg-primary text-primary-foreground pt-40 md:pt-48 pb-24 md:pb-32 relative overflow-hidden">
+  <section className="bg-primary text-primary-foreground py-24 md:py-32 relative overflow-hidden">
     <div className="absolute inset-0 opacity-30 pointer-events-none" style={{ background: "var(--gradient-radial-gold)" }} aria-hidden />
     <div className="container relative">
       <div className="max-w-2xl mb-16">

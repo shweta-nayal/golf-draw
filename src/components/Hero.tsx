@@ -10,7 +10,7 @@ export const Hero = () => (
       <img src={heroImg} alt="" className="h-full w-full object-cover" />
     </div>
 
-    <div className="container relative pt-36 pb-28 md:pt-44 md:pb-40">
+    <div className="container relative pt-36 pb-20 md:pt-44 md:pb-24">
       <div className="max-w-3xl animate-float-up">
         <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-primary/30 backdrop-blur px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-gold">
           <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse-glow" />
@@ -61,8 +61,8 @@ export const Hero = () => (
       </div>
     </div>
 
-    <div className="container relative">
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-primary-foreground/10 rounded-2xl overflow-hidden border border-primary-foreground/10 mb-[-3rem] relative z-10 backdrop-blur-sm">
+    <div className="container relative pb-20 md:pb-24">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-primary-foreground/10 rounded-2xl overflow-hidden border border-primary-foreground/10 backdrop-blur-sm">
         {[
           { icon: Heart, t: "Charity-first", d: "10–100% of every rupee goes to your chosen cause." },
           { icon: Trophy, t: "Real prizes", d: "5, 4 and 3-number tiers — jackpot rolls over." },
