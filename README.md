@@ -148,12 +148,7 @@ VITE_SUPABASE_PROJECT_ID=...
 3. From `/dashboard`:
    - Pick your **charity** + contribution %
    - Enter up to **5 Stableford scores**
-4. To become an **admin**, run this once in the DB (Cloud → SQL):
-   ```sql
-   insert into user_roles (user_id, role)
-   values ('<your-auth-uid>', 'admin');
-   ```
-5. Visit `/admin` to manage charities, run draws, and verify winners.
+4. Visit `/admin` to manage charities, run draws, and verify winners.
 
 ---
 
@@ -186,8 +181,7 @@ If no Match-5 winners, that share **rolls over** to next month.
 
 ## 📝 Notes / Limitations
 
-- **Payment is mocked** — no Stripe/Razorpay integration yet
-- All amounts use **INR** with `Intl.NumberFormat("en-IN")` formatting
+- **Payment is mocked (as of now)** — no Stripe/Razorpay integration yet
 - Email auto-confirm is **on** — production should turn this off and configure SMTP
 
 ---
