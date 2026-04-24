@@ -18,15 +18,14 @@ export const Hero = () => (
         </div>
 
         <h1 className="mt-6 font-serif text-5xl md:text-7xl leading-[1.05] font-semibold text-balance">
-          Play your scores.{" "}
-          <span className="gold-shimmer">Change a life.</span>{" "}
-          Maybe win it all.
+          ⛳ Play your game.{" "}
+          <span className="gold-shimmer">Power a cause.</span>{" "}
+          Win rewards.
         </h1>
 
         <p className="mt-6 max-w-xl text-lg md:text-xl text-primary-foreground/85 text-balance">
-          A subscription, your last 5 Stableford scores, and a charity you love.
-          Every month, our draw turns those numbers into prize money — and a slice
-          of every rupee goes straight to good.
+          Track your last 5 Stableford scores, support a charity you love, and
+          enter a monthly draw where every game contributes to meaningful causes.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
