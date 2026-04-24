@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* DrawForGood — Emerald Prestige design system. All colors HSL. */
+/* Digital Heroes — Emerald Prestige design system. All colors HSL. */
 
 @layer base {
   :root {
@@ -34,13 +34,18 @@
     --destructive: 0 70% 45%;
     --destructive-foreground: 44 35% 96%;
 
+    --success: 145 60% 35%;
+    --success-foreground: 44 35% 96%;
+
+    --warning: 35 90% 50%;
+    --warning-foreground: 160 78% 12%;
+
     --border: 160 15% 85%;
     --input: 160 15% 85%;
     --ring: 160 78% 16%;
 
     --radius: 0.75rem;
 
-    /* Brand tokens */
     --emerald-deep: 160 85% 9%;
     --emerald: 160 78% 16%;
     --emerald-light: 160 50% 35%;
@@ -93,16 +98,12 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+  * { @apply border-border; }
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-feature-settings: "ss01", "cv11";
   }
-  h1, h2, h3, h4 {
-    @apply font-serif tracking-tight;
-  }
+  h1, h2, h3, h4 { @apply font-serif tracking-tight; }
 }
 
 @layer utilities {
@@ -124,15 +125,11 @@
   }
 }
 
-@keyframes shimmer {
-  to { background-position: 200% center; }
-}
-
+@keyframes shimmer { to { background-position: 200% center; } }
 @keyframes float-up {
   from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes pulse-glow {
   0%, 100% { box-shadow: 0 0 0 0 hsl(var(--gold) / 0.45); }
   50%      { box-shadow: 0 0 0 12px hsl(var(--gold) / 0); }
