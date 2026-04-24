@@ -32,7 +32,7 @@ export const Footer = () => (
       </div>
       <div className="mt-12 pt-6 border-t border-primary-foreground/10 flex flex-col sm:flex-row justify-between gap-3 text-xs">
         <p>© {new Date().getFullYear()} Digital Heroes. All rights reserved.</p>
-        <p>Play responsibly · 18+</p>
+        <p>~Created By: Shweta Nayal</p>
       </div>
     </div>
   </footer>

@@ -23,7 +23,7 @@ export const FeaturedCharities = () => {
   }, []);
 
   return (
-    <section className="bg-background py-24 md:py-32">
+    <section className="bg-background pt-24 md:pt-32 pb-12 md:pb-16">
       <div className="container">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
           <div className="max-w-2xl">
