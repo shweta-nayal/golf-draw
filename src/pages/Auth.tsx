@@ -29,7 +29,7 @@ const Auth = () => {
     setBusy(true);
     try {
       if (mode === "signup") {
-        const { error } = await supabase.auth.signUp({
+        const { data, error } = await supabase.auth.signUp({
           email,
           password,
           options: {
@@ -38,6 +38,10 @@ const Auth = () => {
           },
         });
         if (error) throw error;
+        // With auto-confirm enabled, session is created immediately. If not, sign in to be safe.
+        if (!data.session) {
+          await supabase.auth.signInWithPassword({ email, password });
+        }
         toast.success("Welcome to Digital Heroes!", { description: "Choose a plan to start playing." });
         nav("/pricing");
       } else {
