@@ -1,23 +1,19 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { Draws } from "@/components/Draws";
-import { Causes } from "@/components/Causes";
 import { HowItWorks } from "@/components/HowItWorks";
-import { Winners } from "@/components/Winners";
+import { FeaturedCharities } from "@/components/FeaturedCharities";
+import { PricingPreview } from "@/components/PricingPreview";
 import { Footer } from "@/components/Footer";
 
-const Index = () => {
-  return (
-    <main className="min-h-screen bg-background">
-      <Header />
-      <Hero />
-      <Draws />
-      <Causes />
-      <HowItWorks />
-      <Winners />
-      <Footer />
-    </main>
-  );
-};
+const Index = () => (
+  <main className="min-h-screen bg-background">
+    <Header light />
+    <Hero />
+    <HowItWorks />
+    <FeaturedCharities />
+    <PricingPreview />
+    <Footer />
+  </main>
+);
 
 export default Index;
